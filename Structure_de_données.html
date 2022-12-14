@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <input type="text" name="nom" id="too">
+    <input type="submit" name="soumettre" value="Submit" id="submit">
+  </div>
+  <div id="test">
+  </div>
+  <script>
+    const take =document.getElementById('too')
+    take.addEventListener('keyup',
+    (b)=>{
+      const collecte = b.target.value
+      const sub = document.getElementById('submit')
+      sub.addEventListener('click',
+      (e)=>{
+    if(collecte =='romeo'){
+    document.getElementById('test').innerHTML= "<img src ='1642095098871.jpg'>" 
+}
+else{
+  document.getElementById('test').innerHTML = "Nous ne vous reconnaissons pas"
+}
+})
+})
+  </script>
+  <script>
+    const tii =document.getElementById('too')
+    tii.addEventListener('keyup',
+    (c)=>{
+      const cool = c.target.value
+     const dic = document.getElementById('submit')
+     dic.addEventListener('click',
+     (d)=>{
+    const etudiants = [27,21,32,24,22,21,25,27,28,25]
+      var somme = cool
+    etudiants.filter((e)=>{
+      
+      if(e < somme){
+        console.log(e)
+      }
+      return document.getElementById('test').innerHTML = e 
+    })
+  })
+});
+    const matière = ['php','java','javascript','CMS','html','reseau informatique','alogorithme','CSS','Ajax']
+  </script>
+</body>
+</html>
